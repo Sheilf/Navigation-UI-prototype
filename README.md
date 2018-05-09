@@ -1,2 +1,2 @@
 # Navigation-UI-prototype
-Navigation prototype using VueJS
+Navigation prototype using basic VueJS
