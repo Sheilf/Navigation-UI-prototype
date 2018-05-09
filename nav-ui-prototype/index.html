@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Scrap basic UI test with *Vue CS300 turn-in</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- Use React use react-->
+
+
+  
+  <div onclick="window.location.href='../home/index.html'" id="icon-home">
+  
+  <img src="http://res.cloudinary.com/eduprojectsil/image/upload/v1513221842/Webp.net-resizeimage_2_in4icf.png" />
+</div>
+
+  <div id = "app">
+    
+	  <div class="search-wrapper" >
+		  <input type="text" v-model="keyword" placeholder="Search for post..." />
+				<label> Search Post </label>
+	  </div>
+	 
+ <link href="https://unpkg.com/animate.css@3.5.1/animate.min.css" rel="stylesheet" type="text/css">
+
+	  <div class="wrapper">
+		  <div class="card" v-for="post in filteredList" @click="changescreen" >  
+        <a>
+          <img v-bind:src="post.img" />
+          <small> Posted by {{post.top}}</small>
+          <small> Posted by {{post.second}}</small>
+          <small> Posted by {{post.third}}</small>       
+              {{post.title}}
+        </a>
+     </div>
+  </div>
+
+    <div id="switchdiv" v-if="show" :style="checkstring">
+          <p> {{checkstring}}</p>
+     </div>
+
+       
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
